@@ -15,3 +15,5 @@ The NBA stats dataset contains information about players, teams, draft picks, aw
 5. all_star_seletions
 6. award_voting
 7. all_league_teams
+
+Source: [NBA Stats (1947-present)](https://www.kaggle.com/datasets/sumitrodatta/nba-aba-baa-stats?select=All-Star+Selections.csv)

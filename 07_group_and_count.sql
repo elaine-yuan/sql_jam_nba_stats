@@ -14,7 +14,8 @@ GROUP BY position;
 
 --https://sqljam.dev/?skin=nba&challenge=nba26-group-picks-per-team-2025
 --Difficulty: Medium
---Challenge: Which teams drafted the most players in 2025? Return `team_abbrev` and the count as `picks`, most first, breaking ties by `team_abbrev`.--My Solution:
+--Challenge: Which teams drafted the most players in 2025? Return `team_abbrev` and the count as `picks`, most first, breaking ties by `team_abbrev`.
+--My Solution:
 SELECT team_abbrev, COUNT(player) AS picks
 FROM draft_picks
 WHERE season=2025
@@ -38,6 +39,7 @@ HAVING seasons>=40;
 --https://sqljam.dev/?skin=nba&challenge=nba26-group-win-tiers
 --Difficulty: Hard
 --Challenge: Sort every team season since 2000 by how many games it won: 60 or more is 'juggernaut', 50 to 59 is 'contender', 41 to 49 is 'winning', and anything else is 'losing'. Return the label as `tier` and how many team seasons fall in it as `n`.
+--My Solution:
 SELECT CASE WHEN wins>=60 THEN 'juggernaut'
 WHEN wins >=50 THEN 'contender'
 WHEN wins >=41 THEN 'winning'
